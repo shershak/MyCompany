@@ -24,6 +24,7 @@ namespace MyCompany
 
             services.AddTransient<ITextFieldsRepository, EFTextFieldsRepository>();
             services.AddTransient<IServiceItemsRepository, EFServiceItemsRepository>();
+            services.AddTransient<INewsItemsRepository, EFNewsItemsRepository>();
             services.AddTransient<DataManager>();
 
             services.AddDbContext<AppDbContext>(x => x.UseSqlServer(Config.ConnectionString));
@@ -55,8 +56,7 @@ namespace MyCompany
             services.AddControllersWithViews(x =>
             {
                 x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
-            })
-                    .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

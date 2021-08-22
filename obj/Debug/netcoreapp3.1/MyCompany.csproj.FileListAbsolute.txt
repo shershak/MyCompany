@@ -160,3 +160,7 @@ C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contacts.cshtml.g.cs
 C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\Services\Index.cshtml.g.cs
 C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\Services\Show.cshtml.g.cs
 C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Sidebar\Default.cshtml.g.cs
+C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\News\Index.cshtml.g.cs
+C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\NewsItems\Edit.cshtml.g.cs
+C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\NewsItems\Index.cshtml.g.cs
+C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\News\Add.cshtml.g.cs

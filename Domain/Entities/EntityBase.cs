@@ -10,6 +10,12 @@ namespace MyCompany.Domain.Entities
         [Required]
         public Guid Id { get; set; }
 
+        [Display(Name = "Email")]
+        public virtual string Email { get; set; }
+
+        [Display(Name = "Статус")]
+        public virtual string Status { get; set; }
+
         [Display(Name = "Название (заголовок)")]
         public virtual string Title { get; set; }
 
