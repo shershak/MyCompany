@@ -49,7 +49,7 @@ namespace MyCompany.Migrations
                         new
                         {
                             Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
-                            ConcurrencyStamp = "c27e6544-1e85-479b-816f-0cf9a9da6319",
+                            ConcurrencyStamp = "a8fb6dea-722e-4492-9f60-05bacd08ac0c",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -148,13 +148,13 @@ namespace MyCompany.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "17abed97-da3d-4aba-a166-ba573d3ec144",
+                            ConcurrencyStamp = "972a70a4-287d-4fe5-ac57-92da8f9e367f",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAECr+PnPQoLHsG7u+2tiI/d5osfWwqUTU20btuVsFFI0Enpw/jijvN4mANJmxamSonw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKpS/iC7KNt7SsntJliwC8EkPFGk9cuImOay8q4NllQ6m7SCDqeCOIcVhSG/PyHYdg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -259,7 +259,6 @@ namespace MyCompany.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MetaDescription")
@@ -282,12 +281,15 @@ namespace MyCompany.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("TitleImagePath")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Title")
+                        .IsUnique();
 
                     b.ToTable("NewsItems");
                 });
@@ -383,7 +385,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2021, 8, 22, 9, 8, 0, 123, DateTimeKind.Utc).AddTicks(9314),
+                            DateAdded = new DateTime(2021, 8, 22, 15, 25, 14, 247, DateTimeKind.Utc).AddTicks(3691),
                             Text = "Содержание заполняется администратором",
                             Title = "Главная"
                         },
@@ -391,7 +393,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                             CodeWord = "PageServices",
-                            DateAdded = new DateTime(2021, 8, 22, 9, 8, 0, 124, DateTimeKind.Utc).AddTicks(1176),
+                            DateAdded = new DateTime(2021, 8, 22, 15, 25, 14, 247, DateTimeKind.Utc).AddTicks(6227),
                             Text = "Содержание заполняется администратором",
                             Title = "Наши услуги"
                         },
@@ -399,7 +401,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2021, 8, 22, 9, 8, 0, 124, DateTimeKind.Utc).AddTicks(1251),
+                            DateAdded = new DateTime(2021, 8, 22, 15, 25, 14, 247, DateTimeKind.Utc).AddTicks(6307),
                             Text = "Содержание заполняется администратором",
                             Title = "Контакты"
                         },
@@ -407,7 +409,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("3a02b0bf-2972-4413-9244-0a8a3d324998"),
                             CodeWord = "PageNews",
-                            DateAdded = new DateTime(2021, 8, 22, 9, 8, 0, 124, DateTimeKind.Utc).AddTicks(1278),
+                            DateAdded = new DateTime(2021, 8, 22, 15, 25, 14, 247, DateTimeKind.Utc).AddTicks(6334),
                             Text = "Содержание заполняется администратором",
                             Title = "Новости"
                         });
