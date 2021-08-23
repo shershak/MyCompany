@@ -9,6 +9,8 @@ namespace MyCompany.Domain.Entities
 
         [Required]
         public Guid Id { get; set; }
+        [Display(Name = "Автор")]
+        public virtual string Name { get; set; }
 
         [Display(Name = "Email")]
         public virtual string Email { get; set; }

@@ -1,11 +1,14 @@
 ﻿<div id="footer-wrapper">
     <div class="container">
         <div class="row">
-            
+
             <div class="col-12">
-                <a asp-area="" asp-controller="Home" asp-action="Message"  class="button">Написать администрации</a>
+                <div class="footer-div">
+                    <a asp-area="" asp-controller="Home" asp-action="Message" class="button footer-button-write">Написать администрации</a>
+                    <a asp-area="" asp-controller="account" asp-action="login" class="button footer-button-enter">Войти</a>
+                </div>
                 <div id="copyright">
-                    &copy; @Config.CompanyName. All rights reserved. | Design: <a href="dribbble.com/shershak">Oleksandr Shershak</a>
+                    &copy; @Config.CompanyName. All rights reserved. | Design: <a href="https://dribbble.com/shershak">Oleksandr Shershak</a>
                 </div>
 
             </div>

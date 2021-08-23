@@ -69,6 +69,12 @@ namespace MyCompany.Domain
                 CodeWord = "PageNews",
                 Title = "Новости"
             });
+            modelBuilder.Entity<TextField>().HasData(new TextField
+            {
+                Id = new Guid("10ec47ed-d48e-4e3e-909c-b31e6b209fa1"),
+                CodeWord = "PageMessage",
+                Title = "Написать админу"
+            });
 
         }
     }

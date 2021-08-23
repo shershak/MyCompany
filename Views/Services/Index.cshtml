@@ -1,4 +1,5 @@
 ﻿@model IQueryable<ServiceItem>
+@using MyCompany.Controllers
 @{
     TextField textField = ViewBag.TextField;
 
@@ -8,19 +9,24 @@
 }
 
 <div>
-    @if (Model.Any())
-    {
-        <ul class="big-image-list">
-            @foreach (ServiceItem entity in Model)
-            {
-                <li>
-                    <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
-                        <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
-                    </a>
-                    <h4>@entity.Title</h4>
-                    <p>@entity.Subtitle</p>
-                </li>
-            }
-        </ul>
-    }
+    <div>
+        <p>@Html.Raw(textField.Text)</p>
+    </div>
+    <div>
+        @if (Model.Any())
+        {
+            <ul class="big-image-list">
+                @foreach (ServiceItem entity in Model)
+                {
+                    <li>
+                        <a asp-area="" asp-controller="Services" asp-action="Index" asp-route-id="@entity.Id">
+                            <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+                        </a>
+                        <h4>@entity.Title</h4>
+                        <p>@entity.Subtitle</p>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
 </div>

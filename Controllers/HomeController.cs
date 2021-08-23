@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyCompany.Domain;
+using MyCompany.Domain.Entities;
+using MyCompany.Service;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +24,21 @@ namespace MyCompany.Controllers
         public IActionResult Contacts()
         {
             return View(dataManager.TextFields.GetTextFieldByCodeWord("PageContacts"));
+        }
+        public IActionResult Message()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Message(MessageItem model)
+        {
+            if (ModelState.IsValid)
+            {
+                string text = $"<strong>Cообщение от: {model.Name}, {model.Email}.</strong><br>{model.Text}";
+                Mail.Send(model.Title, Config.CompanyEmail, text).Wait();
+                return RedirectToAction("Index", "Home");
+            }
+            return View(model);
         }
     }
 }

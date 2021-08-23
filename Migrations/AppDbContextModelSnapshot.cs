@@ -49,7 +49,7 @@ namespace MyCompany.Migrations
                         new
                         {
                             Id = "44546e06-8719-4ad8-b88a-f271ae9d6eab",
-                            ConcurrencyStamp = "729b40cd-60f7-44dc-a730-e193e9db8717",
+                            ConcurrencyStamp = "4268af13-55f4-4d50-9d96-a67257fd4e5e",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -148,13 +148,13 @@ namespace MyCompany.Migrations
                         {
                             Id = "3b62472e-4f66-49fa-a20f-e7685b9565d8",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "32753390-6f9a-49d7-b169-5e81ce09cdc4",
+                            ConcurrencyStamp = "80f347b4-ecbd-48ba-a6ee-bc35e19afb28",
                             Email = "my@email.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "MY@EMAIL.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAEAACcQAAAAENQdsKLoigosrJtRbvxaYKBZiYjpmEUGYJkbNpWCfYh+GhAaVSO46PKmHsuLt9cE6g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPAnIBtpK9Jyc2S9ZFurmE6EESa0IgIU/iKEFoWs3tjY5GcZvkWyAJxNMEIfxE4/7A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -271,6 +271,10 @@ namespace MyCompany.Migrations
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
@@ -314,6 +318,9 @@ namespace MyCompany.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MetaTitle")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
@@ -362,6 +369,9 @@ namespace MyCompany.Migrations
                     b.Property<string>("MetaTitle")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Status")
                         .HasColumnType("nvarchar(max)");
 
@@ -386,7 +396,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("63dc8fa6-07ae-4391-8916-e057f71239ce"),
                             CodeWord = "PageIndex",
-                            DateAdded = new DateTime(2021, 8, 23, 9, 10, 8, 303, DateTimeKind.Utc).AddTicks(6221),
+                            DateAdded = new DateTime(2021, 8, 23, 12, 38, 37, 908, DateTimeKind.Utc).AddTicks(640),
                             Text = "Содержание заполняется администратором",
                             Title = "Главная"
                         },
@@ -394,7 +404,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("70bf165a-700a-4156-91c0-e83fce0a277f"),
                             CodeWord = "PageServices",
-                            DateAdded = new DateTime(2021, 8, 23, 9, 10, 8, 303, DateTimeKind.Utc).AddTicks(9942),
+                            DateAdded = new DateTime(2021, 8, 23, 12, 38, 37, 908, DateTimeKind.Utc).AddTicks(4651),
                             Text = "Содержание заполняется администратором",
                             Title = "Наши услуги"
                         },
@@ -402,7 +412,7 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("4aa76a4c-c59d-409a-84c1-06e6487a137a"),
                             CodeWord = "PageContacts",
-                            DateAdded = new DateTime(2021, 8, 23, 9, 10, 8, 304, DateTimeKind.Utc).AddTicks(116),
+                            DateAdded = new DateTime(2021, 8, 23, 12, 38, 37, 908, DateTimeKind.Utc).AddTicks(4820),
                             Text = "Содержание заполняется администратором",
                             Title = "Контакты"
                         },
@@ -410,9 +420,17 @@ namespace MyCompany.Migrations
                         {
                             Id = new Guid("3a02b0bf-2972-4413-9244-0a8a3d324998"),
                             CodeWord = "PageNews",
-                            DateAdded = new DateTime(2021, 8, 23, 9, 10, 8, 304, DateTimeKind.Utc).AddTicks(171),
+                            DateAdded = new DateTime(2021, 8, 23, 12, 38, 37, 908, DateTimeKind.Utc).AddTicks(4893),
                             Text = "Содержание заполняется администратором",
                             Title = "Новости"
+                        },
+                        new
+                        {
+                            Id = new Guid("10ec47ed-d48e-4e3e-909c-b31e6b209fa1"),
+                            CodeWord = "PageMessage",
+                            DateAdded = new DateTime(2021, 8, 23, 12, 38, 37, 908, DateTimeKind.Utc).AddTicks(4973),
+                            Text = "Содержание заполняется администратором",
+                            Title = "Написать админу"
                         });
                 });
 
