@@ -166,3 +166,5 @@ C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\NewsItems\Index.
 C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\News\Add.cshtml.g.cs
 C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\News\Error.cshtml.g.cs
 C:\VS\MyCompany\obj\Debug\netcoreapp3.1\Razor\Views\News\Show.cshtml.g.cs
+C:\VS\MyCompany\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\VS\MyCompany\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
