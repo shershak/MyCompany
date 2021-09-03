@@ -1,0 +1,37 @@
+﻿@model IQueryable<NewsItem>
+@{
+    TextField textField = ViewBag.TextField;
+
+    ViewBag.Title = textField.MetaTitle;
+    ViewBag.Description = textField.MetaDescription;
+    ViewBag.Keywords = textField.MetaKeywords;
+}
+
+<div>
+    <div>
+        <p>@Html.Raw(textField.Text)</p>
+    </div>
+    <div>
+        <p><input asp-area="" style="margin-right: 5px;" asp-controller="News" asp-action="Add" type="button" onclick="location.href = '/News/Add';" value="Добавить новость" /></p>
+        @if (Model.Any())
+        {
+            <ul class="big-image-list">
+                @foreach (NewsItem entity in Model)
+                {
+                    if (entity.Status != null)
+                    {
+                        <li>
+                            <a asp-area="" asp-controller="News" asp-action="Index" asp-route-id="@entity.Id">
+                                <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+                            </a>
+                            <h4>@entity.Title</h4>
+                            <p>@entity.Subtitle</p>
+                        </li>
+                    }
+
+                }
+            </ul>
+        }
+    </div>
+
+</div>

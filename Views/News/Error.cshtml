@@ -1,0 +1,12 @@
+﻿@model NewsItem
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+}
+
+
+<div>
+    <h3>Новость с заголовком "@Model.Title" уже существует!</h3>
+    <a asp-area="" asp-controller="News" asp-action="Add" asp-route-id="">Назад</a>
+</div>
