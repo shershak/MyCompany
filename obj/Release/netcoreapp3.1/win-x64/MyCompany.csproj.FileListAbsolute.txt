@@ -152,3 +152,12 @@ C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\MyCompany.csproj.CopyComplete
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\MyCompany.dll
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\MyCompany.pdb
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\MyCompany.genruntimeconfig.cache
+C:\VS\MyCompany\bin\Release\netcoreapp3.1\win-x64\SendGrid.dll
+C:\VS\MyCompany\bin\Release\netcoreapp3.1\win-x64\StarkbankEcdsa.dll
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Areas\Admin\Views\NewsItems\Edit.cshtml.g.cs
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Areas\Admin\Views\NewsItems\Index.cshtml.g.cs
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Views\Home\Message.cshtml.g.cs
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Views\News\Add.cshtml.g.cs
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Views\News\Error.cshtml.g.cs
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Views\News\Index.cshtml.g.cs
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\Razor\Views\News\Show.cshtml.g.cs

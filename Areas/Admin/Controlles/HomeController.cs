@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyCompany.Domain;
+using MyCompany.Domain.Entities;
+using System.Linq;
+using MyCompany.Areas.Admin.ViewModels;
 
 namespace MyCompany.Areas.Admin.Controllers
 {
@@ -15,7 +18,14 @@ namespace MyCompany.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            return View(dataManager.ServiceItems.GetServiceItems());
+            IQueryable<NewsItem> NewsItems = dataManager.NewsItems.GetNewsItems();
+            IQueryable<ServiceItem> ServiceItems = dataManager.ServiceItems.GetServiceItems();
+            ItemsViewModels viewModels = new ItemsViewModels()
+            {
+                News = NewsItems,
+                Services = ServiceItems
+            };
+            return View(viewModels);
         }
     }
 }

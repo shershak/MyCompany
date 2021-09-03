@@ -432,7 +432,7 @@
 /* Footer */
 
 	#footer-wrapper {
-		padding: 4em 0;
+		padding: 2em 0;
 	}
 
 /* Copyright */
@@ -441,8 +441,8 @@
 		text-align: center;
 		color: #A6A88F;
 		border-top: solid 1px #ced0b7;
-		padding: 3em 0 0 0;
-		margin: 3em 0 0 0;
+		padding: 2em 0 0 0;
+		margin: 4em 0 0 0;
 
 		a {
 			color: #A6A88F;
@@ -813,4 +813,16 @@
 		display: block;
 		max-width: 100%;
 		margin: 0;
+	}
+
+	.footer-button-write {
+		position: absolute;
+		left: 10px;
+	}
+	.footer-button-enter {
+		position: absolute;
+		right: 10px;
+	}
+	.footer-div {
+		position: relative;
 	}

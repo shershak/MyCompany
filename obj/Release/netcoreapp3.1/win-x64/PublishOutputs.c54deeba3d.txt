@@ -5,6 +5,10 @@ C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\css\main.mi
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\favicon.ico
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\banner.jpg
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\bg1.png
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\cover1.jpg
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\cover2.jpg
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\cover3.jpg
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\cover4.jpg
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\icon-bubble.png
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\images.jfif
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\landshaft-bernskikh-alp-v-yasniy-den_thumb.jpg
@@ -15,6 +19,7 @@ C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\pic3
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\pic4.jpg
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\pic5.jpg
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\pic6.jpg
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\images\sssss.jpg
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\js\breakpoints.min.js
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\js\browser.min.js
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\wwwroot\js\ckeditor\adapters\jquery.js
@@ -494,6 +499,8 @@ C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\Microsoft.VisualStu
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\Newtonsoft.Json.dll
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\NuGet.Frameworks.dll
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\SendGrid.dll
+C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\StarkbankEcdsa.dll
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\System.Composition.AttributedModel.dll
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\System.Composition.Convention.dll
 C:\VS\MyCompany\obj\Release\netcoreapp3.1\win-x64\PubTmp\Out\System.Composition.Hosting.dll
