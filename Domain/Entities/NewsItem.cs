@@ -8,9 +8,11 @@ namespace MyCompany.Domain.Entities
         [Display(Name = "Заголовок новости")]
         public override string Title { get; set; }
 
+        [Required(ErrorMessage = "Напишите краткое содержание новости")]
         [Display(Name = "Краткое содержание новости")]
         public override string Subtitle { get; set; }
 
+        [Required(ErrorMessage = "Напишите полное содержание новости")]
         [Display(Name = "Полное содержание новости")]
         public override string Text { get; set; }
 

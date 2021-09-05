@@ -3,6 +3,7 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyCompany.Areas.Admin.Controllers;
 using MyCompany.Domain;
 using MyCompany.Domain.Entities;
 using MyCompany.Service;
@@ -54,7 +55,7 @@ namespace MyCompany.Areas.Admin.Controlles
                     Mail.Send(Config.SubjectMailNews, model.Email, text).Wait();
                 }
                 dataManager.NewsItems.SaveNewsItem(model);
-                return RedirectToAction(nameof(NewsItemsController.Index), nameof(NewsItemsController).CutController());
+                return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
             }
             return View(model);
         }
@@ -66,7 +67,7 @@ namespace MyCompany.Areas.Admin.Controlles
             string text = "Ваша новость не опубликована! \"" + model.Title + "\" не соответствует требованиям нашего сайта!";
             Mail.Send(Config.SubjectMailNews, model.Email, text).Wait();
 
-            return RedirectToAction(nameof(NewsItemsController.Index), nameof(NewsItemsController).CutController());
+            return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
         }
     }
 }

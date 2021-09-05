@@ -65,7 +65,6 @@ namespace MyCompany
             {
                 app.UseDeveloperExceptionPage();
             }
-
             app.UseStaticFiles();
 
             app.UseRouting();

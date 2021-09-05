@@ -1,4 +1,5 @@
-﻿@model NewsItem
+﻿@using MyCompany.Controllers
+@model NewsItem
 @{
     string strTitle = "Создать новость";
     ViewBag.Title = strTitle;
@@ -9,6 +10,7 @@
 <div>
     <h2>@strTitle</h2>
     <div>
+
         <form asp-area="" asp-controller="News" asp-action="Add" method="post" enctype="multipart/form-data">
             <input type="hidden" asp-for="Id" />
             <input type="hidden" asp-for="DateAdded" />

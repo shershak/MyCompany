@@ -8,5 +8,12 @@
 
 <div>
     <h3>Новость с заголовком "@Model.Title" уже существует!</h3>
-    <a asp-area="" asp-controller="News" asp-action="Add" asp-route-id="">Назад</a>
+    <form asp-area="" asp-controller="News" asp-action="Back" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Title" value="@Model.Title" />
+        <input type="hidden" asp-for="Subtitle" value="@Model.Subtitle" />
+        <input type="hidden" asp-for="Name" value="@Model.Name" />
+        <input type="hidden" asp-for="Email" value="@Model.Email" />
+        <input type="hidden" asp-for="Text" value="@Model.Text" />
+        <input type="submit" value="Назад" />
+    </form>
 </div>

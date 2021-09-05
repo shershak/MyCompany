@@ -58,5 +58,9 @@ namespace MyCompany.Controllers
             }
             return View(model);
         }
+        public IActionResult Back(NewsItem model)
+        {
+            return View("Add", model);
+        }
     }
 }
